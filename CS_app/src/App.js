@@ -9,7 +9,7 @@ import Login from './components/Login';
 import Services from './components/Services';
 import Calculator from './components/Calculator';
 import Profile from './components/Profile';
-import Registration from './components/Registration';
+import Role from './components/Role';
 
 
 class App extends Component {
@@ -25,7 +25,7 @@ class App extends Component {
                 <Route component={Calculator} path='/calculator'></Route>
                 <Route component={Services} path='/services'></Route>
                 <Route component={Login} path='/login'></Route>
-                <Route component={Registration} path='/registration'></Route>
+                <Route component={Role} path='/role'></Route>
               </Content>
             </div>
           </BrowserRouter>

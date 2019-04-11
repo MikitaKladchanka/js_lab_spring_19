@@ -13,20 +13,19 @@ class Login extends React.Component {
 	}
 
 	getValues(str, e){
-		console.log(e.target.value);
 		if (str === 'email') {this.setState({email: e.target.value})};
 		if (str === 'pass') {this.setState({password: e.target.value})};
 	}
 
 	render(){
-		console.log(this.state);
+		// console.log(this.state);
 		return(
 			<div className={l.loginWrap}>
 			<form>
-				<input type="email" className={l.email}  onChange={(e) => this.getValues('email', e)}/><br/>
-				<input type="password" className={l.pass}  onChange={(e) => this.getValues('pass', e)}/><br/>
+				<input type="email" className={l.email}  onChange={(e) => this.getValues('email', e)} placeholder='email'/><br/>
+				<input type="password" className={l.pass}  onChange={(e) => this.getValues('pass', e)} placeholder='password'/><br/>
 				<input type="submit" value='GO' className={l.submit}/><br/>
-				<NavLink to="/registration">Registration</NavLink>
+				<NavLink to="/role">Registration</NavLink>
 			</form>
 		</div>
 		)

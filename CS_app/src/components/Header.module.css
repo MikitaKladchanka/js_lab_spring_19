@@ -1,6 +1,14 @@
 .main_header{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
   width: 100%;
   background: white;
+  border-bottom: 1px solid black;
+  background: #212121;
+  height: 100px;
+}
+.main_header h1{
+	margin: auto;
+	color: #312CFF;
 }

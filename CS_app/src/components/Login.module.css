@@ -8,8 +8,14 @@
 .email, .pass{
 	width: 200px;
 	height: 40px;
+	font-size: 20px;
+	text-align: center;
+}
+.email{
+	margin-top: 80px;
+}
+.pass{
 	margin-top: 10px;
-	font-size: 25px;
 }
 .submit{
 	width: 90px;
