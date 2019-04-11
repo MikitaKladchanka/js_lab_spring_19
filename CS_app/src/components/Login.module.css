@@ -1,0 +1,22 @@
+.loginWrap{
+	width: 250px;
+	height: 350px;
+	border: 1px solid black;
+	margin: 0 auto;
+	text-align: center; 
+}
+.email, .pass{
+	width: 200px;
+	height: 40px;
+	margin-top: 10px;
+	font-size: 25px;
+}
+.submit{
+	width: 90px;
+	height: 40px;
+	background: #3C3;
+	color: white;
+	border: 1px solid gray;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
