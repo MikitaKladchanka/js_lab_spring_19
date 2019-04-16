@@ -1,4 +1,5 @@
 import React from 'react';
+import {NavLink} from 'react-router-dom';
 import r from './Role.module.css';
 
 class Role extends React.Component{
@@ -20,14 +21,23 @@ getRole(str){
 		this.setState({customer: false});
 		this.setState({executor: true});
 	};
+
 };
 
 	render(){
 		return(
 			<div className={r.roleWrap}>
 				<h2>CHOOSE YOUR DESTINY</h2>
-				<button className={r.customer} onClick={(e) => this.getRole('customer')}>Customer</button><br/>
-				<button className={r.executor} onClick={(e) =>this.getRole('executor')}>Executor</button>
+				<button 
+					className={r.customer} 
+					onClick={(e) => this.getRole('customer')}>
+					<NavLink to="/customer_registration_form">Customer</NavLink>
+				</button><br/>
+				<button 
+					className={r.executor} 
+					onClick={(e) =>this.getRole('executor')}>
+					<NavLink to="/executor_registration_form">Executor</NavLink>
+				</button>
 			</div>
 		);
 	}

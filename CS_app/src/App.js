@@ -10,6 +10,8 @@ import Services from './components/Services';
 import Calculator from './components/Calculator';
 import Profile from './components/Profile';
 import Role from './components/Role';
+import CustomerRegistration from './components/CustomerRegistration';
+import ExecutorRegistration from './components/ExecutorRegistration';
 
 
 class App extends Component {
@@ -26,6 +28,8 @@ class App extends Component {
                 <Route component={Services} path='/services'></Route>
                 <Route component={Login} path='/login'></Route>
                 <Route component={Role} path='/role'></Route>
+                <Route component={CustomerRegistration} path='/customer_registration_form'></Route>
+                <Route component={ExecutorRegistration} path='/executor_registration_form'></Route>
               </Content>
             </div>
           </BrowserRouter>

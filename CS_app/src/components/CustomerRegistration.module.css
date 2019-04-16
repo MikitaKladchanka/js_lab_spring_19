@@ -1,0 +1,22 @@
+.customerRegWrap{
+	width: 300px;
+	height: 350px;
+/*	border: 1px solid black;*/
+	text-align: center;
+	margin: 0 auto;
+}
+.customerRegInput{
+	width: 280px;
+	height: 35px;
+	font-size: 20px;
+	margin-top: 8px;
+}
+input[submit]{
+	width: 90px;
+	height: 40px;
+	background: #3C3;
+	color: white;
+	border: 1px solid gray;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}

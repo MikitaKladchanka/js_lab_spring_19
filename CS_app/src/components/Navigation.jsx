@@ -7,22 +7,22 @@ const Navigation = (props) => {
 		<nav className={nav.header_navigation}>
 			<div>
 				<button className={nav.btn}>
-					<NavLink to="/profile">Profile</NavLink>
+					<NavLink to="/profile" activeClassName={nav.active}>Profile</NavLink>
 				</button>
 			</div>
 			<div>
 				<button className={nav.btn}>
-					<NavLink to="/calculator">Calculator</NavLink>
+					<NavLink to="/calculator" activeClassName={nav.active}>Calculator</NavLink>
 				</button>
 			</div>
 			<div>
 				<button className={nav.btn}>
-					<NavLink to="/services">Services</NavLink>
+					<NavLink to="/services" activeClassName={nav.active}>Services</NavLink>
 				</button>
 			</div>
 			<div>
 				<button className={nav.btn}>
-					<NavLink to="/login">Login</NavLink>
+					<NavLink to="/login" activeClassName={nav.active}>Login</NavLink>
 				</button>
 			</div>
 		</nav>

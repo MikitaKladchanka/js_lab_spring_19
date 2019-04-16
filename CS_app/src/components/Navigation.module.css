@@ -15,5 +15,16 @@
 	margin-right: 10px;
 }
 .btn a:hover{
-	color: #312CFF;
+	color: white;
+}
+a.active{
+	padding-right: 5px;
+	padding-left: 5px;
+	color: #47AFFF;
+	border-right: 2px solid #47AFFF;
+	border-left: 2px solid #47AFFF;
+	font-size: 25px;
+}
+a.active:hover{
+	color: #47AFFF;
 }
