@@ -27,13 +27,13 @@ class MultipleSelectCheckbox extends React.Component{
 	  //   checkboxes.style.display = "none";
 	  //   expanded = false;
 	  // }
-	  alert("works");
+	 	alert('селект должен раскрываться');
 	}
 	
 	render(){
 		return(
 			<div className={m.multiselect}>
-				<div className={m.selectBox}>
+				<div className={m.selectBox} onClick = {this.showCheckboxes}>
 					<select>
 						<option>Select an option</option>
 					</select>

@@ -1,7 +1,7 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
 import MultipleSelectCheckbox from './elements/MultipleSelectCheckbox';
-import c from './ExecutorRegistration.module.css';
+import ex from './ExecutorRegistration.module.css';
 
 class ExecutorRegistration extends React.Component {
 	constructor(props){
@@ -9,32 +9,45 @@ class ExecutorRegistration extends React.Component {
 		this.state = {
 			email: '',
 			phone: '',
-			password: '' 
+			password: '',
+			description: '' 
 		};
 	}
 
 	render(){
 		return(
-			<div className='customerRegWrap'>
+			<div className={ex.executorRegWrap}>
 				<form>
-					<span>Download logo</span><input type="file"/><br/>
+					<div className={ex.logo}><p>Logo</p></div><input type="file" className={`${ex.elements}`}/><br/>
 					<input 
 						type="text" 
-						placeholder='Company name'/><br/>
+						placeholder='Company name'
+						className={`${ex.inputs} ${ex.elements}`}/><br/>
 					<textarea 
 						name="description" 
 						id="companyDescription" 
 						cols="30" rows="10" 
-						placeholder='Describe your company'>
+						placeholder='Describe your company'
+						className={ex.elements}>
 					</textarea><br/>
 					<input 
 						type="text" 
-						placeholder='Adress'/><br/>
+						placeholder='Adress'
+						className={`${ex.inputs} ${ex.elements}`}/><br/>
 					<MultipleSelectCheckbox />
 					<p>PRICE (решу как сделать после рассчетов)</p>
-					<input type="password" placeholder='Password'/><br/>
-					<input type="Password" placeholder='Confirm Password'/><br/>
-					<input type="submit" value='Register'/>
+					<input 
+					type="password" 
+					placeholder='Password'
+					className={`${ex.inputs} ${ex.elements}`}/><br/>
+					<input 
+					type="Password" 
+					placeholder='Confirm Password'
+					className={`${ex.inputs} ${ex.elements}`}/><br/>
+					<input 
+					type="submit" 
+					value='Register'
+					className={`${ex.subBtn} ${ex.elements}`}/>
 				</form>
 			</div>
 		)

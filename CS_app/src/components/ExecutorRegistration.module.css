@@ -1,0 +1,46 @@
+.executorRegWrap{
+	margin: 0 auto;
+}
+
+.executorRegWrap form p{
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+.inputs{
+	height: 35px;
+	width: 400px;
+}
+.elements{
+	margin-top: 10px;
+}
+
+textarea{
+	width: 400px;
+}
+.logo{
+	display: inline-block;
+	margin-right: 10px;
+	width: 100px;
+	height: 100px;
+	border: 1px solid gray;
+	border-radius: 50%;
+	text-align: center;
+	vertical-align: middle;
+}
+.logo p{
+	line-height: 75px;
+	font-size: 25px;
+}
+
+.subBtn{
+	display: block;
+	position: relative;
+	left: 40%;
+	width: 90px;
+	height: 35px;
+	background: #3C3;
+	color: white;
+	border: 1px solid gray;
+	margin-top: 10px;
+}
+
