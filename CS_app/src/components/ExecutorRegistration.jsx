@@ -18,7 +18,7 @@ class ExecutorRegistration extends React.Component {
 		return(
 			<div className={ex.executorRegWrap}>
 				<form>
-					<div className={ex.logo}><p>Logo</p></div><input type="file" className={`${ex.elements}`}/><br/>
+					<div className={ex.logo}><p>Logo</p></div><input type="file" className={`t${ex.elements}`}/><br/>
 					<input 
 						type="text" 
 						placeholder='Company name'
