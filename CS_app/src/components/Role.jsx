@@ -1,13 +1,13 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
-import r from './Role.module.css';
+import r from './Role.module.scss';
 
 class Role extends React.Component{
 	constructor(props){
 		super(props);
 		this.state = {
 			customer: 'false',
-			executor: 'false'
+			service: 'false'
 		};
 		this.getRole = this.getRole.bind(this);
 	}
@@ -15,11 +15,11 @@ class Role extends React.Component{
 getRole(str){
 	if (str === 'customer') {
 		this.setState({customer: true});
-		this.setState({executor: false});
+		this.setState({service: false});
 	};
-	if (str === 'executor') {
+	if (str === 'service') {
 		this.setState({customer: false});
-		this.setState({executor: true});
+		this.setState({service: true});
 	};
 
 };
@@ -27,16 +27,16 @@ getRole(str){
 	render(){
 		return(
 			<div className={r.roleWrap}>
-				<h2>CHOOSE YOUR DESTINY</h2>
+				<h2>Choose role</h2>
 				<button 
 					className={r.customer} 
 					onClick={(e) => this.getRole('customer')}>
 					<NavLink to="/customer_registration_form">Customer</NavLink>
 				</button><br/>
 				<button 
-					className={r.executor} 
-					onClick={(e) =>this.getRole('executor')}>
-					<NavLink to="/executor_registration_form">Executor</NavLink>
+					className={r.service} 
+					onClick={(e) =>this.getRole('service')}>
+					<NavLink to="/service_registration_form">Service</NavLink>
 				</button>
 			</div>
 		);

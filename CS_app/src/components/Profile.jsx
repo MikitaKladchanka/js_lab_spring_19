@@ -1,5 +1,5 @@
 import React from 'react';
-import p from './Profile.module.css';
+import p from './Profile.module.scss';
 
 const Profile = (props) => {
     return (

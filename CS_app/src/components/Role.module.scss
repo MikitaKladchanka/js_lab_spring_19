@@ -4,8 +4,11 @@
 	/*border: 1px solid black;*/
 	margin: 0 auto;
 	text-align: center;
+	h2{
+		color: gray;
+	}
 }
-.customer, .executor{
+.customer, .service{
 	width: 150px;
 	height: 45px;
 	margin-top: 20px;
@@ -13,16 +16,16 @@
 	font-size: 20px;
 	color:#FFFFFF;
 }
-
+ 
 .customer{
 	background: #1D28FF;
 }
 
-.executor{
+.service{
 	background:#FF3D3D;
 }
 
-.customer:active, .executor:active{
+.customer:active, .service:active{
 	background: #FEA424;
 }
 
@@ -31,5 +34,9 @@ button a{
 	color: white;
 	display: block;
 	height: 100%;
-	margin-top: 9px;
+	margin-top: 4px;
+	&:hover{
+		text-decoration: none;
+		color: white;
+	}
 }

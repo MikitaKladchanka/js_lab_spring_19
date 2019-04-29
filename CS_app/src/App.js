@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
-import './App.css';
+import './App.scss';
 
 import Header from './components/Header';
 import Navigation from './components/Navigation';
@@ -11,7 +11,14 @@ import Calculator from './components/Calculator';
 import Profile from './components/Profile';
 import Role from './components/Role';
 import CustomerRegistration from './components/CustomerRegistration';
-import ExecutorRegistration from './components/ExecutorRegistration';
+import ServiceRegistration from './components/ServiceRegistration';
+
+// import Navbar from 'react-bootstrap/Button';
+// import Nav from 'react-bootstrap/Button';
+// import Form from 'react-bootstrap/Button';
+// import FormControl from 'react-bootstrap/Button';
+
+
 
 
 class App extends Component {
@@ -29,7 +36,7 @@ class App extends Component {
                 <Route component={Login} path='/login'></Route>
                 <Route component={Role} path='/role'></Route>
                 <Route component={CustomerRegistration} path='/customer_registration_form'></Route>
-                <Route component={ExecutorRegistration} path='/executor_registration_form'></Route>
+                <Route component={ServiceRegistration} path='/service_registration_form'></Route>
               </Content>
             </div>
           </BrowserRouter>

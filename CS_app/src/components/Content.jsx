@@ -1,5 +1,5 @@
 import React from 'react';
-import c from './Content.module.css';
+import c from './Content.module.scss';
 
 const Content = (props) => {
     return (

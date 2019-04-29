@@ -1,6 +1,6 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
-import c from './CustomerRegistration.module.css';
+import c from './CustomerRegistration.module.scss';
 
 class CustomerRegistration extends React.Component {
 	constructor(props){

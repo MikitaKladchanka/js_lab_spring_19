@@ -1,11 +1,11 @@
 import React from 'react';
-import m from './MultipleSelectCheckbox.module.css';
+import m from './MultipleSelectCheckbox.module.scss';
 
 class MultipleSelectCheckbox extends React.Component{
 	constructor(props){
 		super(props);
 		this.state = {
-			standart: 'false',
+			standart: 'false', 
 			general: 'false',
 			after_reapair: 'false',
 			carpets: 'false',
@@ -39,13 +39,13 @@ class MultipleSelectCheckbox extends React.Component{
 					</select>
 				<div className={m.overSelect}></div>
 				</div>
-				<div id={m.checkboxes}>
+				<div className = {m.checkboxes}>
 					<label for={m.one}>
-					<input type="checkbox" id={m.one}/>First</label>
+					<input type="checkbox" className = {m.one}/>First</label>
 					<label for={m.two}>
-					<input type="checkbox" id={m.two}/>Second</label>
+					<input type="checkbox" className = {m.two}/>Second</label>
 					<label for={m.three}>
-					<input type="checkbox" id={m.three}/>Third</label>
+					<input type="checkbox" className = {m.three}/>Third</label>
 				</div>
 			</div>
 		)

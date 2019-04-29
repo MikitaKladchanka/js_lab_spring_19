@@ -1,6 +1,6 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
-import l from './Login.module.css';
+import l from './Login.module.scss';
 
 class Login extends React.Component {
 	constructor(props){
